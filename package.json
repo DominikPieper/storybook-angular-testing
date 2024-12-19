@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "storybook": "ng run storybook-angular-testing:storybook",
+    "build-storybook": "ng run storybook-angular-testing:build-storybook"
   },
   "private": true,
   "dependencies": {
@@ -23,16 +25,35 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
+    "@analogjs/platform": "^1.10.3",
+    "@analogjs/vite-plugin-angular": "^1.9.0",
+    "@analogjs/vitest-angular": "^1.9.0",
     "@angular-devkit/build-angular": "^19.0.6",
     "@angular/cli": "^19.0.6",
     "@angular/compiler-cli": "^19.0.0",
+    "@chromatic-com/storybook": "^3.2.3",
+    "@compodoc/compodoc": "^1.1.26",
+    "@nx/vite": "^20.0.0",
+    "@storybook/addon-docs": "^8.4.7",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-onboarding": "^8.4.7",
+    "@storybook/angular": "^8.4.7",
+    "@storybook/blocks": "^8.4.7",
+    "@storybook/test": "^8.4.7",
     "@types/jasmine": "~5.1.0",
+    "@vitest/coverage-v8": "^2.1.8",
+    "@vitest/ui": "^2.1.8",
     "jasmine-core": "~5.4.0",
+    "jsdom": "^22.0.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.6.2"
+    "storybook": "^8.4.7",
+    "typescript": "~5.6.2",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^2.1.8"
   }
 }
