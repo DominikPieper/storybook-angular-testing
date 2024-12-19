@@ -1,9 +1,15 @@
 import type { Preview } from "@storybook/angular";
-import { setCompodocJson } from "@storybook/addon-docs/angular";
-import docJson from "../documentation.json";
-setCompodocJson(docJson);
+import { withThemeByClassName } from '@storybook/addon-themes';
 
 const preview: Preview = {
+  decorators: withThemeByClassName({
+    themes: {
+      light: 'light',
+      dark: 'dark',
+    },
+    defaultTheme: 'light',
+  }),
+
   parameters: {
     controls: {
       matchers: {
